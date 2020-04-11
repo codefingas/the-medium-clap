@@ -79,6 +79,8 @@ const withClappedAnimation = (WrappedComponent) => {
       });
 
       const clap = document.getElementById("clap");
+      const countTotal = document.getElementById("countTotal");
+      countTotal.style.opacity = 1;
       clap.style.transform = "scale(1,1)";
 
       const newAnimationTimeLine = this.animationTimeline.add([
